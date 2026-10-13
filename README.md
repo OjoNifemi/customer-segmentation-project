@@ -116,7 +116,7 @@ Clusters 0 and 1 have almost the same income and spending. Only age separates th
 ## Plots
 
 ![Elbow plot](images/elbow.png)
-![Dendrogram](images/dendogram.png.png)
+![Dendrogram](images/dendogram.png)
 ![Clusters: income vs spending](images/clusters_income_spending.png)
 
 ## Limitations
