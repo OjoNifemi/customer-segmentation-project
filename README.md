@@ -30,6 +30,8 @@ uvicorn app.main:app --reload
 
 After retraining, restart the server so it loads the new files.
 
+4.   streamlit run ui.py in its own terminal the ui and api have to be running at the same time 
+
 ## API
 
 ### `POST /predict`
@@ -132,18 +134,21 @@ Clusters 0 and 1 have almost the same income and spending. Only age separates th
 
 ```
 Customer_segmentation_project/
-├── app/
-│   └── main.py          # FastAPI app
-├── data/
-│   └── Mall_Customers.csv
-├── images/              # plots used in this README
-├── models/              # saved scaler and model (created by train.py)
-├── notebooks/
-│   └── exploration.ipynb
-├── config.py            # shared feature names and model paths
-├── train.py             # trains and saves the scaler and model
-├── requirements.txt
-└── README.md
+    app/
+        __init__.py
+        main.py
+    data/
+        Mall_Customers.csv
+    images/
+    models/
+    notebooks/
+        customer_segmentation_project.ipynb
+    .gitignore
+    config.py
+    README.md
+    requirements.txt
+    train.py
+    ui.py
 ```
 
 ## Tools
